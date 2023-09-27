@@ -3,7 +3,8 @@
     "dependencies": {
         "core": "*",
         "radio": "*",
-        "microphone": "*"
+        "microphone": "*",
+        "8io-qwiicgpio": "github:calliope-net/8io-qwiicgpio#v1.0.2"
     },
     "files": [
         "main.blocks",
@@ -21,7 +22,7 @@
         "calliopemini",
         "microbit"
     ],
-    "preferredEditor": "tsprj",
+    "preferredEditor": "blocksprj",
     "yotta": {
         "config": {
             "microbit-dal": {

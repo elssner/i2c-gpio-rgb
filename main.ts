@@ -1,0 +1,11 @@
+qwiicgpio.setMode(
+qwiicgpio.eADDR.GPIO_Qwiic,
+qwiicgpio.eIO.IN,
+qwiicgpio.eIO.IN,
+qwiicgpio.eIO.IN,
+qwiicgpio.eIO.IN,
+qwiicgpio.eIO.IN,
+qwiicgpio.eIO.IN,
+qwiicgpio.eIO.IN,
+qwiicgpio.eIO.IN
+)
