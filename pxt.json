@@ -1,5 +1,6 @@
 {
     "name": "rgb-8io",
+    "version": "0.0.1",
     "dependencies": {
         "core": "*",
         "radio": "*",
