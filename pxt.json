@@ -3,8 +3,6 @@
     "version": "0.0.1",
     "dependencies": {
         "core": "*",
-        "radio": "*",
-        "microphone": "*",
         "8io-qwiicgpio": "github:calliope-net/8io-qwiicgpio#v1.0.2"
     },
     "files": [
