@@ -1,17 +1,23 @@
 input.onButtonEvent(Button.A, input.buttonEventClick(), function () {
-    X6 += -1
-    qwiicgpio.writeOUTPUT_PORT(i2cAdr, X6)
+    x += -1
+    qwiicgpio.writeOUTPUT_PORT(i2cAdr, x)
 })
 input.onButtonEvent(Button.B, input.buttonEventClick(), function () {
-    X6 += 1
-    qwiicgpio.writeOUTPUT_PORT(i2cAdr, X6)
+    x += 1
+    qwiicgpio.writeOUTPUT_PORT(i2cAdr, x)
 })
 input.onButtonEvent(Button.A, ButtonEvent.Hold, function () {
-    basic.showNumber(qwiicgpio.bitwise(qwiicgpio.readINPUT_PORT(i2cAdr), qwiicgpio.eBit.AND, 7))
+    basic.showNumber(qwiicgpio.readINPUT_PORT(i2cAdr))
 })
-let X6 = 0
+input.onButtonEvent(Button.B, ButtonEvent.Hold, function () {
+    for (let Index = 0; Index <= 7; Index++) {
+        qwiicgpio.writeOUTPUT_PORT(qwiicgpio.qwiicgpio_eADDR(qwiicgpio.eADDR.GPIO_x27), Index)
+    }
+})
+let x = 0
 let i2cAdr = 0
-i2cAdr = qwiicgpio.qwiicgpio_eADDR(qwiicgpio.eADDR.GPIO_x26)
+i2cAdr = qwiicgpio.qwiicgpio_eADDR(qwiicgpio.eADDR.GPIO_x27)
+qwiicgpio.beimStart(i2cAdr)
 qwiicgpio.setMode(
 i2cAdr,
 qwiicgpio.eIO.IN,

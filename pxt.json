@@ -3,8 +3,8 @@
     "version": "0.0.1",
     "dependencies": {
         "core": "*",
-        "bit": "github:calliope-net/bit#v1.0.6",
-        "gpio": "github:calliope-net/gpio#v1.1.2"
+        "bit": "github:calliope-net/bit#v1.1.0",
+        "gpio": "github:calliope-net/gpio#v2.0.1"
     },
     "files": [
         "main.blocks",
