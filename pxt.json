@@ -1,5 +1,5 @@
 {
-    "name": "rgb-8io",
+    "name": "i2c-gpio-rgb",
     "version": "0.0.2",
     "dependencies": {
         "core": "*",
