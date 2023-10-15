@@ -1,6 +1,6 @@
 {
     "name": "rgb-8io",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "dependencies": {
         "core": "*",
         "bit": "github:calliope-net/bit#v1.1.0",
